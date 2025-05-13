@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+   
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* === Soft Blue Shades === */
+    --blue-100: #0F172A;  /* Navy Ink (darkest, buat header/teks bold) */
+    --blue-90:  #1E293B;  /* Gunmetal Blue */
+    --blue-80:  #334155;  /* Slate Blue */
+    --blue-70:  #475569;  /* Blue Gray */
+    --blue-60:  #64748B;  /* Dusty Steel */
+    --blue-40:  #CBD5E1;  /* Ice Blue (soft bg) */
+    --blue-20:  #E2E8F0;  /* Lightest Blue Tint */
+
+    /* === Accent & Cream === */
+    --cream-100: #F8F9FA; /* White Cream (buat background utama) */
+    --accent-soft: #93C5FD; /* Baby Blue accent (hover, border) */
+}
+
+.header h2 {
+    display: flex;
+    justify-content: center;
+    background-color: var(--blue-100);
+    color: var(--blue-20);
+    padding: 1rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: var(--blue-80);
+    padding: 1rem;
+    gap: 5rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--blue-20);
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: var(--accent-soft);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--blue-100);
+    color: var(--blue-20);
+    padding: 0.5rem 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* profile.html */
+.article {
+    padding: 2%;
+    color: var(--blue-100);
+}
+
+.text { 
+    display: flex; /*text jadi flex container */
+    align-items: flex-start; /*VERTIKAL alignment (karena arah default flex itu row) */
+    flex-wrap: wrap; /*bisa pindah ke baris bawah kalau gak muat */ */
+    justify-content: center;
+    gap: 2rem;
+} 
+
+.pict {
+    text-align: center;
+    margin: 20px;
+}
+
+.pict img {
+    border-radius: 50%;
+    border: 4px solid var(--blue-100);
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.profile {
+    flex: 1;
+    min-width: 280px;
+    margin: 20px;
+}
+
+.profile p {
+    margin-top: 1rem;
+}
+
+.sosmed {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.sosmed a {
+    font-size: 20px;
+    color: var(--blue-100);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.sosmed a:hover {
+    color: var(--accent-soft);
+}
+
+
+/* games.html */
+.article_g {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+.find h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--blue-100);
+}
+
+.games {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.games a {
+    background-color: var(--blue-20);
+    color: var(--blue-100);
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.games a:hover {
+    background-color: var(--accent-soft);
+    color: white;
+}
+
+
+/* usefull.html */
+.article_u {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+.make h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--blue-100);
+}
+
+.web {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.web a {
+    background-color: var(--blue-20);
+    color: var(--blue-100);
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.web a:hover {
+    background-color: var(--accent-soft);
+    color: white;
+}
+
